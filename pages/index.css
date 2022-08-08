@@ -327,7 +327,22 @@ template {
   margin: 0 auto;
 }
 
+.content {
+  padding-top: 70px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    padding-top: 84px;
+  }
+}
 .header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+  max-width: inherit;
   background-color: #df2626;
   padding: 0 20px;
 }
@@ -1105,5 +1120,8 @@ template {
 @media screen and (min-width: 1440px) {
   .footer {
     min-height: 124px;
+  }
+  .footer_theme_dark {
+    background-color: black;
   }
 }/*# sourceMappingURL=index.css.map */

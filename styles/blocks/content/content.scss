@@ -1,0 +1,10 @@
+.content {
+    padding-top: $header-min-height-mobile;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        padding-top: $header-min-height-tablet;
+    }
+  }
