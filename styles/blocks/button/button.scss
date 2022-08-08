@@ -6,6 +6,7 @@
   background-color: $white-bg;
   padding: 4px 0;
   @include font(400, 14, 28);
+
   &:active {
     font-weight: 700;
   }
@@ -16,6 +17,7 @@
     font-size: 18px;
     padding: 10px 0;
     min-width: 228px;
+
     &:hover {
       font-weight: 700;
     }
@@ -25,5 +27,10 @@
 @media screen and (min-width: 1440px) {
   .button {
     width: 228px;
+
+    &_place_order-search {
+      grid-column: 2;
+      grid-row: 4;
+    }
   }
 }

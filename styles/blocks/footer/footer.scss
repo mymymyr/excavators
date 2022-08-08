@@ -4,16 +4,30 @@
   min-height: 64px;
   display: flex;
   align-items: center;
+
+  &__copyright {
+    @include font(700, 12, 24);
+    margin: 0 0 0 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     min-height: 104px;
+
+    &__copyright {
+      @include font(700, 15, 24);
+      margin-left: 40px;
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer {
     min-height: 124px;
+
+    &__copyright {
+      margin-left: 50px;
+    }
   }
 }

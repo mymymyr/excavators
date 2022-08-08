@@ -2,11 +2,89 @@
   padding: $padding-section;
   background-color: $red-bg;
   color: $white-font;
+
+  &__container {
+    display: flex;
+    min-height: 50px;
+  }
+
+  &__input {
+    padding-left: 20px;
+    @include font(400, 11, 24);
+    border-radius: 8px 0px 0px 8px;
+    border: 2px solid #000000;
+    min-width: 175px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $black-font;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    @include font(400, 48, 50);
+    display: block;
+
+    &:first-of-type {
+      padding-top: 20px;
+      border-top: 1px solid #FFFFFF;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__send-button {
+    cursor: pointer;
+    @include font(400, 11, 24);
+    border-radius: 0px 8px 8px 0px;
+    border: 2px solid #000000;
+    border-left: none;
+    background-color: $white-bg;
+    min-width: 107px;
+
+    &:active {
+      font-weight: 700;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .enroll {
     padding: $padding-section-tablet;
+
+    &__input {
+      font-size: 14px;
+      min-width: 348px;
+    }
+
+    &__label {
+      @include font(400, 100, 100);
+
+      &:first-of-type {
+        padding-top: 0;
+        border-top: none;
+      }
+
+      &:last-of-type {
+        margin-bottom: 190px;
+      }
+    }
+
+    &__send-button {
+      font-size: 14px;
+      min-width: 205px;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
   }
 }
 
@@ -16,5 +94,31 @@
     padding-left: 229px;
     padding-bottom: 34px;
     position: relative;
+
+    &__container {
+      margin-left: 5px;
+    }
+
+    &__label {
+      @include font(400, 120, 120);
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 120px;
+      }
+
+      &:first-of-type::before {
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        width: 129px;
+        height: 95px;
+        background-image: url("../images/enroll-arrow.svg");
+      }
+    }
   }
 }

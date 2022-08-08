@@ -11,6 +11,10 @@
     width: 688px;
     max-height: 685px;
     margin: 60px 0 54px 0;
+
+    &_place_camera {
+      max-height: 656px;
+    }
   }
 }
 
@@ -21,5 +25,18 @@
     margin: 0;
     grid-column: 2;
     grid-row: 1/5;
+
+    &_place_camera {
+      max-height: 832px;
+    }
+
+    &_place_composition {
+      grid-row: 1/6;
+    }
+
+    &_place_order-search {
+      grid-column: 1;
+      grid-row: 3/6;
+    }
   }
 }

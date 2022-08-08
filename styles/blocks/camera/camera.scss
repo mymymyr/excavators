@@ -2,11 +2,81 @@
   padding: $padding-section;
   background-color: $black-bg;
   color: $white-font;
+
+  &__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &> :not(:last-child) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+
+  &__mail-feedback {
+    @include font(400, 12, 12);
+    margin: 0;
+  }
+
+  &__name-feedback {
+    @include font(400, 14, 20);
+    margin: 0 0 6px 0;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    @include font(400, 14, 20);
+    margin: 0 0 60px 0;
+  }
+
+  &__text-feedback {
+    text-transform: lowercase;
+    @include font(400, 24, 26);
+    margin: 0 0 30px 0;
+  }
+
+  &__title {
+    @include font(400, 48, 56);
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .camera {
     padding: $padding-section-tablet;
+
+    &__items {
+      &> :not(:last-child) {
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+      }
+    }
+
+    &__mail-feedback {
+      @include font(400, 14, 24);
+    }
+
+    &__name-feedback {
+      @include font(400, 18, 28);
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      @include font(400, 18, 28);
+      margin-bottom: 180px;
+    }
+
+    &__text-feedback {
+      @include font(400, 43, 43);
+      margin-bottom: 60px;
+      max-width: 526px;
+    }
+
+    &__title {
+      @include font(400, 122, 122);
+    }
   }
 }
 
@@ -14,6 +84,21 @@
   .camera {
     padding: $padding-section-desktop;
     @include grid;
+
+    &__items {
+      grid-column: 1/3;
+      @include grid;
+      column-gap: 48px;
+
+      &> :not(:last-child) {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &__text {
+      margin-top: 359px;
+    }
   }
 }
-
