@@ -1,9 +1,9 @@
-.order-search {
+.backhoe-loader {
   padding: $padding-section;
 
   &__text {
     @include font(400, 14, 18);
-    margin: 0 0 30px 0;
+    margin: 30px 2px;
   }
   
   &__title {
@@ -13,7 +13,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .order-search {
+  .backhoe-loader {
     padding: $padding-section-tablet;
 
     &__text {
@@ -29,7 +29,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .order-search {
+  .backhoe-loader {
     padding: $padding-section-desktop;
     @include grid;
     column-gap: 318px;

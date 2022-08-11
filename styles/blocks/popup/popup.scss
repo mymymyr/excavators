@@ -1,0 +1,75 @@
+.popup {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: max(320px, 100vw);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+    &__close-button {
+        border: none;
+        padding: 0;
+        background: center / contain no-repeat url("../images/burger-menu-opened.svg");
+        position: absolute;
+        top: -40px;
+        right: -10px;
+        width: 40px;
+        height: 40px;
+        transition: opacity 0.3s;
+    }
+
+    &__close-button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    &__container {
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    &__image {
+        max-width: 90vw;
+        max-height: 80vh;
+        min-width: calc(320px * 0.75);
+    }
+
+    &__text {
+        @include font(400, 12, 15);
+        color: $white-font;
+        margin: 10px 0 0 0;
+    }
+
+    &_opened {
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .popup {
+        &__text {
+            @include font(400, 18, 20);
+            color: $white-font;
+            margin: 10px 0 0 0;
+        }
+
+        &__image {
+            max-width: 75vw;
+            max-height: 75vh;
+            min-width: calc(320px * 0.75);
+        }
+    }
+}

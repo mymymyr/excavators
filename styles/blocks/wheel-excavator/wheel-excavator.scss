@@ -1,6 +1,6 @@
-.composition {
+.wheel-excavator {
   padding: $padding-section;
-  background-color: $yellow-bg;
+  background-color: $gray-bg;
 
   &__item {
     @include font(400, 14, 18);
@@ -14,7 +14,7 @@
 
   &__items {
     list-style-type: none;
-    margin: 80px 0 0 0;
+    margin: 50px 0 0 0;
     padding: 0;
   }
 
@@ -22,7 +22,7 @@
     @include font(400, 14, 18);
 
     &:not(:last-of-type) {
-      margin: 0px 2px 36px 2px;
+      margin: 30px 2px;
     }
 
     &:last-of-type {
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .composition {
+  .wheel-excavator {
     padding: $padding-section-tablet;
 
     &__item {
@@ -71,7 +71,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .composition {
+  .wheel-excavator {
     padding: $padding-section-desktop;
     @include grid;
 

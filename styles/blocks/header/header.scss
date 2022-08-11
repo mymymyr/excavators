@@ -12,9 +12,9 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  z-index: 999;
+  z-index: 99;
   max-width: inherit;
-  background-color: $red-bg;
+  background-color: $brown-bg;
   padding: 0 20px;
 
   &__burger-menu {
@@ -59,6 +59,12 @@
     }
   }
 
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+
   &__link {
     text-decoration: none;
     display: flex;
@@ -96,21 +102,27 @@
       &> :hover {
         font-weight: 700;
       }
-    }
 
-    &__items {
-      flex-direction: row;
-      padding: 0;
-
-      &> :not(:last-child) {
+      & :not(:last-of-type) {
         margin-bottom: 0;
         margin-right: 43px;
       }
     }
 
+    &__items {
+      flex-direction: row;
+      padding: 0;
+    }
+
     &__logo {
       width: 36px;
       height: 36px;
+    }
+
+    &__separator {
+      width: 1px;
+      height: 24px;
+      background-color: white;
     }
   }
 }

@@ -1,0 +1,10 @@
+.characteristics {
+    color: #2a4297;
+    @include font(400, 14, 14);
+    padding-right: 10px;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: end;
+    box-sizing: border-box;
+}

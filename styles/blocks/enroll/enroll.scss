@@ -1,28 +1,9 @@
 .enroll {
   padding: $padding-section;
-  background-color: $red-bg;
+  background-color: $brown-bg;
   color: $white-font;
 
-  &__container {
-    display: flex;
-    min-height: 50px;
-  }
-
-  &__input {
-    padding-left: 20px;
-    @include font(400, 11, 24);
-    border-radius: 8px 0px 0px 8px;
-    border: 2px solid #000000;
-    min-width: 175px;
-    box-sizing: border-box;
-
-    &::placeholder {
-      color: $black-font;
-    }
-  }
-
-  &__label {
-    cursor: pointer;
+  &__title {
     @include font(400, 48, 50);
     display: block;
 
@@ -36,21 +17,36 @@
     }
 
     &:last-of-type {
-      margin-bottom: 200px;
+      margin-bottom: 50px;
     }
   }
 
-  &__send-button {
-    cursor: pointer;
-    @include font(400, 11, 24);
-    border-radius: 0px 8px 8px 0px;
-    border: 2px solid #000000;
-    border-left: none;
-    background-color: $white-bg;
-    min-width: 107px;
+  &__key {
+    @include font(400, 14, 18);
+    margin: 0;
+  }
+
+  &__items {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
 
     &:active {
-      font-weight: 700;
+      font-weight: 900;
+    }
+  }
+
+  &__item {
+    @include font(400, 16, 24);
+
+    &::before {
+      content: "—";
+      position: relative;
+      left: -5px;
     }
   }
 }
@@ -59,12 +55,7 @@
   .enroll {
     padding: $padding-section-tablet;
 
-    &__input {
-      font-size: 14px;
-      min-width: 348px;
-    }
-
-    &__label {
+    &__title {
       @include font(400, 100, 100);
 
       &:first-of-type {
@@ -77,13 +68,8 @@
       }
     }
 
-    &__send-button {
-      font-size: 14px;
-      min-width: 205px;
-
-      &:hover {
-        font-weight: 700;
-      }
+    &__link:hover {
+      font-weight: 900;
     }
   }
 }
@@ -95,11 +81,7 @@
     padding-bottom: 34px;
     position: relative;
 
-    &__container {
-      margin-left: 5px;
-    }
-
-    &__label {
+    &__title {
       @include font(400, 120, 120);
 
       &:not(:last-of-type) {
