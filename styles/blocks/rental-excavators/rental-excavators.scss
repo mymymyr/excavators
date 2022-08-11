@@ -1,8 +1,8 @@
 .rental-excavators {
   padding: 14px 20px 20px 20px;
-  @include font(400, 14, 18);
 
   &__text {
+    @include font(400, 18, 22);
     margin: 30px 2px;
   }
 
@@ -12,6 +12,7 @@
   }
 
   &__number {
+    @include font(400, 18, 22);
     color: inherit;
     text-decoration: none;
     margin-left: 20px;
@@ -46,7 +47,7 @@
     }
 
     &__title {
-      @include font(400, 100, 110);
+      @include font(400, 80, 80);
     }
 
     &__number {
@@ -69,6 +70,7 @@
     }
 
     &__title {
+
       margin-bottom: 60px;
     }
   }

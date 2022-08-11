@@ -2,6 +2,7 @@
   font-weight: 700;
 
   &_decoration_strikethrough {
+    @include font(400, 16, 20);
     font-weight: normal;
     text-decoration: line-through;
   }

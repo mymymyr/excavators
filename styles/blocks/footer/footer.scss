@@ -6,7 +6,7 @@
   align-items: center;
 
   &__copyright {
-    @include font(700, 12, 24);
+    @include font(700, 14, 20);
     margin: 0 0 0 20px;
   }
 }

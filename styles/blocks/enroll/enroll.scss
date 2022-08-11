@@ -4,31 +4,26 @@
   color: $white-font;
 
   &__title {
+    margin: 30px 0;
     @include font(400, 48, 50);
     display: block;
-
-    &:first-of-type {
-      padding-top: 20px;
-      border-top: 1px solid #FFFFFF;
-    }
-
-    &:not(:last-of-type) {
-      margin-bottom: 10px;
-    }
-
-    &:last-of-type {
-      margin-bottom: 50px;
-    }
+    padding-top: 20px;
+    border-top: 1px solid #FFFFFF;
   }
 
   &__key {
-    @include font(400, 14, 18);
+    @include font(400, 16, 16);
     margin: 0;
   }
 
   &__items {
+    margin: 10px 0 35px 0;
     list-style-type: none;
     padding-left: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -41,13 +36,17 @@
   }
 
   &__item {
-    @include font(400, 16, 24);
+    @include font(400, 18, 26);
 
     &::before {
       content: "—";
       position: relative;
       left: -5px;
     }
+  }
+
+  &__address {
+    font-size: 16px;
   }
 }
 
@@ -56,20 +55,34 @@
     padding: $padding-section-tablet;
 
     &__title {
-      @include font(400, 100, 100);
+      @include font(400, 70, 70);
+      padding-top: 0;
+      border-top: none;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
 
-      &:first-of-type {
-        padding-top: 0;
-        border-top: none;
-      }
-
-      &:last-of-type {
-        margin-bottom: 190px;
+    &__link {
+      &:hover {
+        font-weight: 900;
+        color: blue;
       }
     }
 
-    &__link:hover {
-      font-weight: 900;
+    &__key {
+      @include font(400, 18, 28);
+    }
+  
+    &__item {
+      @include font(400, 25, 40);
+    }
+
+    &__items {
+      margin-bottom: 25px;
+    }
+
+    &__address {
+      font-size: 22px;
     }
   }
 }

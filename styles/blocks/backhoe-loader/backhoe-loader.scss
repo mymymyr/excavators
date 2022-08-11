@@ -2,7 +2,7 @@
   padding: $padding-section;
 
   &__text {
-    @include font(400, 14, 18);
+    @include font(400, 18, 22);
     margin: 30px 2px;
   }
   
@@ -17,9 +17,9 @@
     padding: $padding-section-tablet;
 
     &__text {
-      @include font(400, 18, 28);
-      margin-bottom: 60px;
+      @include font(400, 20, 28);
       max-width: 380px;
+      margin: 40px 4px;
     }
 
     &__title {

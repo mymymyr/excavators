@@ -5,7 +5,7 @@
   min-width: 169px;
   background-color: $white-bg;
   padding: 4px 0;
-  @include font(400, 14, 28);
+  @include font(400, 18, 30);
   color: $black-font;
 
   &:active {
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 768px) {
   .button {
-    font-size: 18px;
+    @include font(400, 20, 32);
     padding: 10px 0;
     min-width: 228px;
 

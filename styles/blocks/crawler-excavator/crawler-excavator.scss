@@ -4,11 +4,12 @@
   color: $white-font;
 
   &__description {
-    @include font(400, 14, 18);
+    @include font(400, 18, 22);
     margin: 30px 2px;
   }
 
   &__items {
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,29 +22,39 @@
   }
 
   &__mail-feedback {
-    @include font(400, 12, 12);
+    @include font(400, 14, 14);
     margin: 0;
+    color: #c5c5c5;
   }
 
   &__name-feedback {
-    @include font(400, 14, 20);
+    @include font(400, 16, 22);
     margin: 0 0 6px 0;
+    color: #c5c5c5;
+  }
+
+  &__photo {
+    float: left;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 15px;
   }
 
   &__text {
     text-transform: uppercase;
-    @include font(400, 14, 20);
+    @include font(400, 22, 24);
     margin: 60px 0 40px 0;
   }
 
   &__text-feedback {
-    text-transform: lowercase;
-    @include font(400, 24, 26);
+    @include font(400, 20, 22);
     margin: 0 0 30px 0;
+    color: #c5c5c5;
   }
 
   &__title {
-    @include font(400, 48, 56);
+    @include font(400, 32, 38);
     margin: 0;
   }
 }
@@ -51,6 +62,12 @@
 @media screen and (min-width: 768px) {
   .crawler-excavator {
     padding: $padding-section-tablet;
+
+    &__description {
+      @include font(400, 20, 28);
+      margin: 40px 4px;
+      max-width: 400px;
+    }
 
     &__items {
       &> :not(:last-child) {
@@ -60,27 +77,27 @@
     }
 
     &__mail-feedback {
-      @include font(400, 14, 24);
+      @include font(400, 16, 16);
     }
 
     &__name-feedback {
-      @include font(400, 18, 28);
+      @include font(400, 18, 26);
       margin-bottom: 10px;
     }
 
     &__text {
-      @include font(400, 18, 28);
-      margin-bottom: 180px;
+      @include font(400, 20, 28);
+      margin: 80px 0 60px 0;
     }
 
     &__text-feedback {
-      @include font(400, 43, 43);
-      margin-bottom: 60px;
-      max-width: 526px;
+      @include font(400, 24, 26);
+      margin-bottom: 35px;
+      max-width: 400px;
     }
 
     &__title {
-      @include font(400, 122, 122);
+      @include font(400, 64, 64);
     }
   }
 }

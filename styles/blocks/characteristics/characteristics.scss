@@ -1,10 +1,30 @@
 .characteristics {
     color: #2a4297;
-    @include font(400, 14, 14);
+    @include font(400, 18, 22);
     padding-right: 10px;
     text-decoration: none;
     width: 100%;
     display: block;
     text-align: end;
     box-sizing: border-box;
+
+    &:active {
+        font-weight: 700;
+    }
+
+    &_theme_dark {
+        color: #6375b3;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .characteristics {
+        font-size: 20px;
+        padding: 0;
+        min-width: 228px;
+
+        &:hover {
+            color: #0038ff;
+        }
+    }
 }

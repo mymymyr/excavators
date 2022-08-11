@@ -3,7 +3,7 @@
   background-color: $gray-bg;
 
   &__item {
-    @include font(400, 14, 18);
+    @include font(400, 16, 22);
 
     &:not(:last-child) {
       padding-bottom: 14px;
@@ -14,12 +14,12 @@
 
   &__items {
     list-style-type: none;
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0;
   }
 
   &__text {
-    @include font(400, 14, 18);
+    @include font(400, 18, 22);
 
     &:not(:last-of-type) {
       margin: 30px 2px;
@@ -31,7 +31,7 @@
   }
 
   &__title {
-    @include font(400, 30, 38);
+    @include font(400, 32, 38);
     margin: 0;
   }
 }
@@ -40,8 +40,12 @@
   .wheel-excavator {
     padding: $padding-section-tablet;
 
+    &__items {
+      margin-top: 40px;
+    }
+
     &__item {
-      @include font(400, 18, 28);
+      @include font(400, 20, 26);
 
       &:not(:last-child) {
         padding-bottom: 30px;
@@ -52,14 +56,14 @@
 
     &__text {
       max-width: 400px;
-      @include font(400, 18, 28);
+      @include font(400, 20, 28);
 
       &:not(:last-of-type) {
-        margin: 0px 4px 20px 4px;
+        margin: 40px 4px;
       }
-
+  
       &:last-of-type {
-        margin: 0px 4px 60px 4px;
+        margin: 0px 4px 40px 4px;
       }
     }
 

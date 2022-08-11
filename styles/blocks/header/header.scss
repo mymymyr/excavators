@@ -98,14 +98,16 @@
       min-height: $header-min-height-tablet;
     }
 
+    &__items {
+      &> :not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 12px;
+      }
+    }
+
     &__item {
       &> :hover {
-        font-weight: 700;
-      }
-
-      & :not(:last-of-type) {
-        margin-bottom: 0;
-        margin-right: 43px;
+        color: #6e5050;
       }
     }
 
@@ -132,6 +134,12 @@
     padding: 0 50px;
     flex-direction: row;
     justify-content: space-between;
+
+    &__items {
+      &> :not(:last-child) {
+        margin-right: 18px;
+      }
+    }
 
     &__burger-menu {
       display: none;
