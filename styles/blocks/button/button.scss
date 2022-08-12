@@ -28,6 +28,7 @@
 @media screen and (min-width: 1440px) {
   .button {
     width: 228px;
+    @include font(400, 22, 32);
 
     &_place_backhoe-loader {
       grid-column: 2;

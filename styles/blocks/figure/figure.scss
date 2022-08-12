@@ -2,3 +2,16 @@
     max-width: max-content;
     margin: 0;
 }
+
+@media screen and (min-width: 1440px) {
+    .figure {
+        grid-column: 1;
+        grid-row: 2/6;
+        align-self: center;
+
+        &_place_crawler-excavator {
+            grid-column: 2;
+            grid-row: 3/5;
+        }
+    }
+}

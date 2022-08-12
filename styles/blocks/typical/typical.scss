@@ -1,0 +1,116 @@
+.typical {
+  padding: $padding-section;
+  background-color: $gray-bg;
+
+  &__item {
+    @include font(400, 16, 22);
+
+    &:not(:last-child) {
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #000000;
+    }
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+
+  &__text {
+    @include font(400, 18, 22);
+    margin: 30px 2px;
+  }
+
+  &__title {
+    @include font(400, 32, 38);
+    margin: 0;
+  }
+
+  &__key {
+    margin-right: 5px;
+  }
+
+  &__value {
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .typical {
+    padding: $padding-section-tablet;
+
+    &__items {
+      margin-top: 40px;
+    }
+
+    &__item {
+      @include font(400, 20, 26);
+
+      &:not(:last-child) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000000;
+      }
+    }
+
+    &__text {
+      max-width: 400px;
+      @include font(400, 20, 28);
+      margin: 40px 4px;
+    }
+
+    &__title {
+      @include font(400, 64, 64);
+      max-width: 600px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .typical {
+    padding: $padding-section-desktop;
+    padding-top: 100px;
+    @include grid;
+
+    &__item {
+      @include font(400, 22, 30);
+      display: flex;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #000000;
+      }
+    }
+
+    &__items {
+      @include grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 50px;
+      margin-top: 0;
+      grid-column: 2;
+      display: block;
+    }
+
+
+
+    &__text {
+      margin: 0 0 100px 0;
+      @include font(400, 24, 32);
+
+      &:last-of-type {
+        margin-bottom: 198px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 100px;
+    }
+  }
+}

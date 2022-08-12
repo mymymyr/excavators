@@ -38,10 +38,10 @@
 
 @media screen and (min-width: 768px) {
   .rental-excavators {
-    @include font(400, 20, 28);
     padding: $padding-section-tablet;
 
     &__text {
+      @include font(400, 20, 28);
       margin-bottom: 60px;
       max-width: 469px;
     }
@@ -51,6 +51,8 @@
     }
 
     &__number {
+      @include font(400, 20, 28);
+
       &:hover {
         font-weight: 900;
       }
@@ -64,14 +66,18 @@
     @include grid;
 
     &__text {
-      margin-bottom: 170px;
-      grid-column: 1;
-      grid-row: 2;
+      @include font(400, 24, 34);
+      max-width: 500px;
+      margin-bottom: 100px;
+    }
+
+    &__number {
+      @include font(400, 24, 34);
     }
 
     &__title {
-
-      margin-bottom: 60px;
+      @include font(400, 90, 90);
+      margin-bottom: 30px;
     }
   }
 }

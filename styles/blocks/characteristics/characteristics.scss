@@ -28,3 +28,10 @@
         }
     }
 }
+
+@media screen and (width: 1440px) {
+    .characteristics {
+        margin-top: 10px;
+        @include font(400, 24, 32);
+    }
+}

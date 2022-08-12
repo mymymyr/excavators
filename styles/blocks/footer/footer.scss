@@ -16,7 +16,7 @@
     min-height: 104px;
 
     &__copyright {
-      @include font(700, 15, 24);
+      @include font(700, 16, 24);
       margin-left: 40px;
     }
   }
@@ -27,6 +27,7 @@
     min-height: 124px;
 
     &__copyright {
+      @include font(400, 20, 28);
       margin-left: 50px;
     }
   }

@@ -105,7 +105,15 @@
 @media screen and (min-width: 1440px) {
   .crawler-excavator {
     padding: $padding-section-desktop;
+    padding-top: 100px;
     @include grid;
+
+    &__description {
+      @include font(400, 24, 32);
+      margin-top: 0;
+      margin-bottom: 100px;
+      grid-column: 1;
+    }
 
     &__items {
       grid-column: 1/3;
@@ -120,7 +128,28 @@
     }
 
     &__text {
-      margin-top: 359px;
+      @include font(400, 24, 32);
+      margin-top: 0;
+    }
+
+    &__mail-feedback {
+      @include font(400, 18, 18);
+    }
+
+    &__name-feedback {
+      @include font(400, 20, 28);
+      margin-bottom: 10px;
+    }
+
+    &__text-feedback {
+      @include font(400, 26, 30);
+      margin-bottom: 35px;
+      max-width: 400px;
+    }
+
+    &__title {
+      grid-column: 1;
+      margin-bottom: 100px;
     }
   }
 }

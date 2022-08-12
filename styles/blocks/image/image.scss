@@ -1,4 +1,5 @@
 .image {
+  cursor: pointer;
   max-width: 100%;
   box-sizing: border-box;
   max-height: 278px;
@@ -14,8 +15,8 @@
     max-height: 685px;
     margin: 40px 0 10px 0;
 
-    &_place_crawler-excavator {
-      max-height: 656px;
+    &_place_characteristics {
+      width: 400px;
     }
   }
 }
@@ -27,18 +28,6 @@
     margin: 0;
     grid-column: 2;
     grid-row: 1/5;
-
-    &_place_crawler-excavator {
-      max-height: 832px;
-    }
-
-    &_place_wheel-excavator {
-      grid-row: 1/6;
-    }
-
-    &_place_order-search {
-      grid-column: 1;
-      grid-row: 3/6;
-    }
+    align-self: center;
   }
 }
