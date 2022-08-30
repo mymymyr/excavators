@@ -6,6 +6,14 @@
   object-fit: cover;
   margin: 30px auto 5px auto;
   padding: 0 10px;
+
+  &_place_mobile {
+    display: block;
+  }
+
+  &_place_desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -18,7 +26,15 @@
     &_place_characteristics {
       width: 400px;
     }
-  }
+
+    &_place_mobile {
+      display: none;
+    }
+
+    &_place_desktop {
+      display: block;
+    }
+  }    
 }
 
 @media screen and (min-width: 1440px) {

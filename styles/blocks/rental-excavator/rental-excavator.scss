@@ -1,4 +1,4 @@
-.rental-excavators {
+.rental-excavator {
   padding: 14px 20px 20px 20px;
 
   &__text {
@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 344px) {
-  .rental-excavators {
+  .rental-excavator {
     &__title {
       font-size: 43px;
     }
@@ -37,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .rental-excavators {
+  .rental-excavator {
     padding: $padding-section-tablet;
 
     &__text {
@@ -61,7 +61,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .rental-excavators {
+  .rental-excavator {
     padding: $padding-section-desktop;
     @include grid;
 
