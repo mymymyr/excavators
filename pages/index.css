@@ -492,6 +492,12 @@ template {
   margin: 30px auto 5px auto;
   padding: 0 10px;
 }
+.image_place_mobile {
+  display: block;
+}
+.image_place_desktop {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
   .image {
@@ -502,6 +508,12 @@ template {
   }
   .image_place_characteristics {
     width: 400px;
+  }
+  .image_place_mobile {
+    display: none;
+  }
+  .image_place_desktop {
+    display: block;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -514,22 +526,22 @@ template {
     align-self: center;
   }
 }
-.rental-excavators {
+.rental-excavator {
   padding: 14px 20px 20px 20px;
 }
-.rental-excavators__text {
+.rental-excavator__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin: 30px 2px;
 }
-.rental-excavators__title {
+.rental-excavator__title {
   font-weight: 400;
   font-size: 47px;
   line-height: 56px;
   margin: 0;
 }
-.rental-excavators__number {
+.rental-excavator__number {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -537,64 +549,64 @@ template {
   text-decoration: none;
   margin-left: 20px;
 }
-.rental-excavators__number:active {
+.rental-excavator__number:active {
   font-weight: 900;
 }
-.rental-excavators__container {
+.rental-excavator__container {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 344px) {
-  .rental-excavators__title {
+  .rental-excavator__title {
     font-size: 43px;
   }
 }
 @media screen and (min-width: 768px) {
-  .rental-excavators {
+  .rental-excavator {
     padding: 40px;
   }
-  .rental-excavators__text {
+  .rental-excavator__text {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 60px;
     max-width: 469px;
   }
-  .rental-excavators__title {
+  .rental-excavator__title {
     font-weight: 400;
     font-size: 80px;
     line-height: 80px;
   }
-  .rental-excavators__number {
+  .rental-excavator__number {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
   }
-  .rental-excavators__number:hover {
+  .rental-excavator__number:hover {
     font-weight: 900;
   }
 }
 @media screen and (min-width: 1440px) {
-  .rental-excavators {
+  .rental-excavator {
     padding: 50px 50px 48px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 76px;
   }
-  .rental-excavators__text {
+  .rental-excavator__text {
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     max-width: 500px;
     margin-bottom: 100px;
   }
-  .rental-excavators__number {
+  .rental-excavator__number {
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
   }
-  .rental-excavators__title {
+  .rental-excavator__title {
     font-weight: 400;
     font-size: 90px;
     line-height: 90px;
