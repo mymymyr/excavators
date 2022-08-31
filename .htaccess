@@ -1,0 +1,7 @@
+### begin Sprinthost-redirects 29.08.2022 19:20
+### Sprinthost-redirects end
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
