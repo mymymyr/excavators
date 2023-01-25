@@ -37,6 +37,7 @@
 
   &__value {
     text-align: end;
+    min-width: 110px;
   }
 }
 
@@ -97,8 +98,6 @@
       grid-column: 2;
       display: block;
     }
-
-
 
     &__text {
       margin: 0 0 100px 0;
